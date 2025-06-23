@@ -1,4 +1,3 @@
-![get](https://github.com/user-attachments/assets/a4907449-af8b-49e9-baca-04394d0dc82d)# TODO_tasks
 
 Сборка:
   - через Makefile:
@@ -21,5 +20,28 @@ DB_NAME=TODO_tasks
 
   скриншоты работы:
 
-  -успешные запросы
+успешные запросы:
+- get
 ![get](https://github.com/user-attachments/assets/cfaa3a20-3492-429a-8c33-56cffc4f63d3)
+
+-post
+![post](https://github.com/user-attachments/assets/4394a0c4-976d-43cb-95d1-fc665864ac4f)
+
+-put
+![put](https://github.com/user-attachments/assets/7aea60a8-0e42-456e-9f4e-9fa0e07109b9)
+
+-delete
+![delete](https://github.com/user-attachments/assets/3ffb13e7-26b7-4e7d-b015-94d69a510e3c)
+
+Таблица
+- до запросов выше
+![Таблица до](https://github.com/user-attachments/assets/35add1df-4713-4dbc-8df6-26e2110fd2cd)
+
+- после запросов выше
+![Таблица после](https://github.com/user-attachments/assets/399996f0-fdac-474a-8e32-ecba3a3c27c1)
+
+
+
+
+
+
