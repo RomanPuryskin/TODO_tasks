@@ -22,23 +22,25 @@ DB_NAME=TODO_tasks
 
 успешные запросы:
 - get
-![get](https://github.com/user-attachments/assets/cfaa3a20-3492-429a-8c33-56cffc4f63d3)
+![image](https://github.com/user-attachments/assets/99a8bc1c-6215-44a5-8450-c142a4450353)
 
 -post
-![post](https://github.com/user-attachments/assets/4394a0c4-976d-43cb-95d1-fc665864ac4f)
+![image](https://github.com/user-attachments/assets/1fe9f82a-caf3-440d-b49a-071acbd861db)
 
 -put
-![put](https://github.com/user-attachments/assets/7aea60a8-0e42-456e-9f4e-9fa0e07109b9)
+![image](https://github.com/user-attachments/assets/07c6b8af-6b0c-4c9e-9ecc-a27fed12b8fc)
 
 -delete
-![delete](https://github.com/user-attachments/assets/3ffb13e7-26b7-4e7d-b015-94d69a510e3c)
+![image](https://github.com/user-attachments/assets/56589d39-948f-404c-a36d-a83af40084ef)
 
 Таблица
 - до запросов выше
-![Таблица до](https://github.com/user-attachments/assets/35add1df-4713-4dbc-8df6-26e2110fd2cd)
+![image](https://github.com/user-attachments/assets/c0bc8acd-45da-4f32-8fcd-6918e4ad4cba)
+
 
 - после запросов выше
-![Таблица после](https://github.com/user-attachments/assets/399996f0-fdac-474a-8e32-ecba3a3c27c1)
+![image](https://github.com/user-attachments/assets/1baf42ed-299b-4401-8a1b-3ad55cb42846)
+
 
 
 
