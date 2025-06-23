@@ -1,4 +1,4 @@
-# TODO_tasks
+![get](https://github.com/user-attachments/assets/a4907449-af8b-49e9-baca-04394d0dc82d)# TODO_tasks
 
 Сборка:
   - через Makefile:
@@ -17,3 +17,9 @@ DB_NAME=TODO_tasks
 Документация: 
   документация уже сгенирована, хранится в папке ./docs и доступна по эндпоинту http://localhost:3000/swagger/index.html после запуска проекта
   для повторной генерации документации команда: make swag
+
+
+  скриншоты работы:
+
+  -успешные запросы
+![get](https://github.com/user-attachments/assets/cfaa3a20-3492-429a-8c33-56cffc4f63d3)
