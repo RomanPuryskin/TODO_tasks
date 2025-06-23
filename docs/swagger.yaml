@@ -1,0 +1,172 @@
+definitions:
+  github_com_TODO_task_pkg_models.CreateTaskRequst:
+    description: Модель задачи для запроса на создание
+    properties:
+      description:
+        type: string
+      title:
+        type: string
+    type: object
+  github_com_TODO_task_pkg_models.Task:
+    description: Полная модель задачи
+    properties:
+      created_at:
+        example: "2023-05-15T10:00:00Z"
+        format: date-time
+        type: string
+      description:
+        type: string
+      id:
+        type: integer
+      status:
+        type: string
+      title:
+        type: string
+      updated_at:
+        example: "2023-05-15T10:00:00Z"
+        format: date-time
+        type: string
+    type: object
+  github_com_TODO_task_pkg_models.UpdateTaskRequst:
+    description: Модель задачи для запроса на обновление
+    properties:
+      status:
+        type: string
+    type: object
+host: localhost:3000
+info:
+  contact: {}
+  description: API для управления задачами
+  title: TODO_task API
+  version: "1.0"
+paths:
+  /tasks:
+    get:
+      consumes:
+      - application/json
+      description: Получает все имеющиеся задачи
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/github_com_TODO_task_pkg_models.Task'
+            type: array
+        "400":
+          description: '''error'': ''message'''
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: '''error'': ''message'''
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Получить все задачи
+      tags:
+      - tasks
+    post:
+      consumes:
+      - application/json
+      description: Создает новую задачу
+      parameters:
+      - description: Данные задачи
+        in: body
+        name: task
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_TODO_task_pkg_models.CreateTaskRequst'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Задача успешно создана
+          schema:
+            additionalProperties: true
+            type: object
+        "400":
+          description: '''error'': ''message'''
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: '''error'': ''message'''
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Создать новую задачу
+      tags:
+      - task
+  /tasks/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Удаляет задачу по ID
+      parameters:
+      - description: ID задачи
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Задача успешно удалена
+          schema:
+            additionalProperties: true
+            type: object
+        "400":
+          description: '''error'': ''message'''
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: '''error'': ''message'''
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Удалить задачу
+      tags:
+      - task
+    put:
+      consumes:
+      - application/json
+      description: 'Обновляет статус задачи по id, Варианты: "new" , "in_progress"
+        , "done"'
+      parameters:
+      - description: ID задачи
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Новые данные
+        in: body
+        name: task
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_TODO_task_pkg_models.UpdateTaskRequst'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Задача успешно обновлена
+          schema:
+            additionalProperties: true
+            type: object
+        "400":
+          description: '''error'': ''message'''
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: '''error'': ''message'''
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Обновить статус задачи
+      tags:
+      - task
+swagger: "2.0"
